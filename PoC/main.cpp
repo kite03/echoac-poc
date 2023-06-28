@@ -13,7 +13,5 @@ int main() {
 
     std::cout << output << std::endl;
 
-    std::cout << "This next test"
-
     return 0;
 }
