@@ -1,5 +1,5 @@
 #pragma once
-#include <windows.h>
+#include <Windows.h>
 #include <cstdint>
 
 struct k_param_readmem {
