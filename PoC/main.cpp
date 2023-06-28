@@ -9,7 +9,11 @@ int main() {
 
     const char* self_test_string = "This is a PoC of an arbitrary read vulnerability in the echo.ac driver.";
 
-    const char* output = Driver.read_memory<const char*>((void*)self_test_string, strlen(self_test_string), processHandle);
+    const char* output = Driver.read_memory<const char*>(
+            (void*)self_test_string, // Address to read from
+            strlen(self_test_string), // Size to read
+            processHandle // Handle
+            );
 
     std::cout << output << std::endl;
 
