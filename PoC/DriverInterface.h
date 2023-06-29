@@ -84,8 +84,8 @@ public:
                 sizeof(k_param_readmem),
                 &read_request,
                 sizeof(k_param_readmem),
-                NULL,
-                NULL
+                nullptr,
+                nullptr
                 )) {
             std::cout << "DeviceIOControl 0x60a26124 failed!" << std::endl;
             std::cout << "Error code: " << GetLastError() << std::endl;
