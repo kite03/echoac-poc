@@ -58,6 +58,7 @@ Other people have pointed out in my tweet that this level of intrusive scanning 
 ![lyrus](https://cdn.gls.cx/480ab37787ff990c)
 
 Especially considering there is the real risk that their could be very sensitive data in the memory of scanned processes, as pointed out again here by other users.
+
 ![bulbasaur](https://cdn.gls.cx/e57fcaaef3e93fb6)
 
 **Another very concerning point is that since bulbasaur's tweet was posted, they removed the line in their website about storing the memory of processes on the computer, but yet they still do it!**
