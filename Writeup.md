@@ -97,7 +97,8 @@ Most of these can be viewed as replies on the tweet, but I will screenshot them 
   - ![Reply 2](https://cdn.gls.cx/f8dd33f1ccfb1cf0)
   - ![Reply 3](https://cdn.gls.cx/c7fb67f78f6610ad)
   - This account was inactive for years, and made its first replies to me. ![Reply 4](https://cdn.gls.cx/c5f75a0871cba519)
-  - This user owns his own "Screensharing tool". ![Reply 5](https://cdn.gls.cx/a96ec0ef6f8e7e46)
+  - This user owns his own "Screensharing tool". 
+  - ![Reply 5](https://cdn.gls.cx/a96ec0ef6f8e7e46)
 - Here's a list of most of their staff and support team, which you can correlate to some of the replies I received. 
   - ![List](https://cdn.gls.cx/29ca995001be5872)
 
