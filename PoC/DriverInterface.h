@@ -5,6 +5,7 @@ class DriverInterface {
 public:
     HANDLE hDevice;
 
+    // On instantiation, get a handle to the driver and execute our first IOCTL call.
     DriverInterface() {
         hDevice = CreateFileA(
                 "\\\\.\\EchoDrv",
@@ -23,11 +24,12 @@ public:
             std::cout << "Error code: " << GetLastError() << std::endl;
         }
 
+        // Yes, this buffer seems useless - but without it the driver BSOD's the PC.
         //Create a buffer to have data returned to.
         void* buf = (void*)malloc(4096);
 
-        //Call IOCTL that sets the PID variable and gets past the dword check
-        //0x9e6a0594 - Control Code
+        //Call IOCTL that sets the PID variable and gets past the DWORD check
+        //0x9e6a0594 - IOCTL Code
         BOOL success = DeviceIoControl(hDevice, 0x9e6a0594, NULL, NULL, buf, 4096, NULL, NULL);
         if (!success) {
             std::cout << "DeviceIOControl 0x9e6a0594 failed!" << std::endl;
@@ -45,6 +47,7 @@ public:
         CloseHandle(hDevice);
     }
 
+    // Next, get a HANDLE to the desired process through the driver.
     HANDLE get_handle_for_pid(DWORD pid) {
         // IOCTL Code - 0xe6224248
 
@@ -67,20 +70,21 @@ public:
         return param.handle;
     }
 
+    // A simple template for easy reading of memory.
     template <typename type>
     type read_memory(void* read_address, SIZE_T size, HANDLE target_handle) {
         type output_buffer = (type)malloc(size);
 
         k_param_readmem read_request{};
-        read_request.fromAddress = (void*)read_address;
-        read_request.length = size;
+        read_request.fromAddress = (void*)read_address; // Address to read in process
+        read_request.length = size; // size in bytes of what we want to read
         read_request.targetProcess = target_handle; // Privileged handle we created through the driver previously.
-        read_request.toAddress = (void*)output_buffer;
+        read_request.toAddress = (void*)output_buffer; // Address of buffer to write data to.
 
         if (!DeviceIoControl(
-                hDevice,
-                0x60a26124,
-                &read_request,
+                hDevice, // Driver handle
+                0x60a26124, // Read memory IOCTl
+                &read_request, // Our request
                 sizeof(k_param_readmem),
                 &read_request,
                 sizeof(k_param_readmem),
@@ -92,9 +96,9 @@ public:
             return output_buffer;
         }
 
+        // Return the data received by the driver.
         return output_buffer;
     }
-
 
     void Shutdown() {
         CloseHandle(hDevice);
