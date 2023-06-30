@@ -23,7 +23,7 @@ Consider the following tweet.
 
 At the time of writing, this was their updated "What do we log?" FAQ: ![faq](https://cdn.gls.cx/777c3b6e8dbb01d9)\
 
-Notice the now missing statement on process memory. Shocking.
+Notice the now missing statement on process memory.
 
 
 ## My (protocol) first interactions with echo.ac publicly
