@@ -8,7 +8,7 @@ A "screensharing tool" is a program developed to "assist" server admins in ident
 
 We will go into more detail about the data scanned by echo.ac and what it's seemingly doing with the data later.
 
-# The Main Memory IOCTL Bug (CVE ID requested)
+## The Main Memory IOCTL Bug (CVE ID requested)
 ### A simple working PoC can be found in the PoC folder.
 
 `echo-free.exe` deploys a Kernel driver named `echo_driver.sys`, which it uses mainly to scan process memory to "check for cheats".
