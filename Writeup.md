@@ -26,22 +26,25 @@ I also received copious amounts of hatemail and harassment on the tweet, which w
 ![Reply 2](https://cdn.gls.cx/f8dd33f1ccfb1cf0)
 ![Reply 3](https://cdn.gls.cx/c7fb67f78f6610ad)
 
+
 This account was inactive for years, and made its first replies to me. ![Reply 4](https://cdn.gls.cx/c5f75a0871cba519)
 
-This user owns his own "Screensharing tool". 
 
+This user owns his own "Screensharing tool". 
 ![Reply 5](https://cdn.gls.cx/a96ec0ef6f8e7e46)
+
 
 Here's a list of most of their staff and support team, which you can correlate to some of the replies I received. 
 ![List](https://cdn.gls.cx/29ca995001be5872)
 
-Other people have pointed out in my tweet that this level of intrusive scanning poses a serious privacy risk.
 
+Other people have pointed out in my tweet that this level of intrusive scanning poses a serious privacy risk.
 ![lyrus](https://cdn.gls.cx/480ab37787ff990c)
 
-Especially considering there is the real risk that their could be very sensitive data in the memory of scanned processes, as pointed out again here by other users.
 
+Especially considering there is the real risk that their could be very sensitive data in the memory of scanned processes, as pointed out again here by other users.
 ![bulbasaur](https://cdn.gls.cx/e57fcaaef3e93fb6)
+
 
 **Another very concerning point is that since bulbasaur's tweet was posted, they removed the line in their website about storing the memory of processes on the computer, but yet they still do it!**
 
