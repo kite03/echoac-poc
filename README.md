@@ -27,7 +27,7 @@ We **strongly** recommend reading the above document after you finish this one. 
 
 A local attacker can send a series of specially crafted IOCTLs to the driver, which allows an attacker to arbitrarily read, query, and interact with process memory and kernel memory.
 
-The IOCTL sequence is as followed:
+The IOCTL attack series is as followed:
 - Deploy the driver (if not loaded already) using the command ```sc create EchoDrv binpath= C:\PathToDriver.sys type= kernel``` and then start it with `sc start EchoDrv`
 - Attain a handle to the device with `DeviceIoControl` on device path `\\\\.\\EchoDrv`
 - Call IOCTL `0x9e6a0594` with no input buffer, but set an output void* buffer of length `4096`. This is to bypass an internal check in the driver.
@@ -60,7 +60,7 @@ The IOCTL sequence is as followed:
 
 
 ## Remediations
-From reading the code, it's clear that the developers responsible have a knowledge about securing drivers that is critically close to zero. As such, we recommend the following articles from Microsoft's blog, detailing how to secure and validate IOCTL requests, and securing your driver.
+From reading the code, it's clear that the developers responsible have knowledge about securing drivers that is critically close to zero. As such, we recommend the following articles from Microsoft's blog, detailing how to secure and validate IOCTL requests, and how to secure your driver.
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/portable/access-control
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/driversecurity/windows-security-model
 
