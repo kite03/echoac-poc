@@ -39,8 +39,6 @@ Firstly, I received this message from Josh, the CEO in my DMs on his personal ac
 
 Now that you’ve read that, I would like to remind you of the many errors in their kernel driver, which made this exploit possible.
 
-I was then blocked by him on echo.ac's official company account. ![Blocked](https://cdn.gls.cx/a667763dbcbae333)
-
 I also received copious amounts of hatemail and harassment on the tweet, which was weird as none of these people followed me.
 
 ![Reply 1](https://cdn.gls.cx/76b2e38cd4abf81f)
@@ -66,6 +64,13 @@ Here's a list of most of their staff and support team, which you can correlate t
 Other people have pointed out in my tweet that this level of intrusive scanning poses a serious privacy risk.
 
 ![lyrus](https://cdn.gls.cx/480ab37787ff990c)
+
+
+I was also blocked by him on echo.ac's official company account. ![Blocked](https://cdn.gls.cx/a667763dbcbae333)
+
+He also deleted this tweet after I called him out for making no sense.
+
+![image](https://github.com/kite03/echoac-poc/assets/67329371/26f40428-bfa6-4882-a86a-9a28fea297fd)
 
 
 # Company Response
