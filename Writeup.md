@@ -37,7 +37,9 @@ Most of these can be viewed as replies on the tweet, but I will screenshot them 
 
 Firstly, I received this message from Josh, the CEO in my DMs on his personal account. ![Josh DM](https://cdn.gls.cx/3d259502f60b4d18)
 
-I was then blocked by him on echo.ac's official company account, which I find pretty childish. ![Blocked](https://cdn.gls.cx/a667763dbcbae333)
+Now that you’ve read that, I would like to remind you of the many errors in their kernel driver, which made this exploit possible.
+
+I was then blocked by him on echo.ac's official company account. ![Blocked](https://cdn.gls.cx/a667763dbcbae333)
 
 I also received copious amounts of hatemail and harassment on the tweet, which was weird as none of these people followed me.
 
