@@ -16,7 +16,7 @@ First are the result pages people publicly share in their discord. An example of
 - https://cdn.gls.cx/8e6d6fba0ff37156
 - https://cdn.gls.cx/f2785539b72a1065
 
-Second, the policy that they publish. This policy is supposed to provide some transparency as to what data echo collects. It is assumed that, for ethical reasons if nothing else - a rough outline to the methods used to collect data are stated. Unfortunately, this policy is not trustworthy. You see, echo has changed is policy regarding what they collect after the following interaction. Note that they still collect this data, they just don't tell their users anymore. They aren't being open as to what information they collect, and are clearly happy to hide things from their policy if it helps them evade criticism.
+Second, the policy that they publish. This policy is supposed to provide some transparency as to what data echo collects. It is assumed that, for ethical reasons if nothing else - a rough outline to the methods used to collect data are stated. Unfortunately, this policy is not trustworthy. This is because Echo has changed is policy regarding what they collect after the following interaction. Note that they still collect this data, they just don't tell their users anymore. They aren't being open as to what information they collect, and are clearly happy to hide things from their policy if it helps them evade criticism.
 
 Consider the following tweet.
 
