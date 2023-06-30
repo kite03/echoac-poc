@@ -75,7 +75,7 @@ He also deleted this tweet after I called him out for making no sense.
 
 ![image](https://cdn.gls.cx/e66126c13d00eb36)
 
-Overall, really weird behaviour from a registered company with many paying users. Not a great look.
+Overall, really weird behaviour from a registered company with many paying users. Honestly, I think their response speaks volumes about the kind of people who operate this company. When faced with criticism they send a group of people to attack the person who went against them and, when they do try to make an actual point, they delete it immediately after it's called out for making little to no sense. Then just pretend it never even happened.
 
 
 # Company Response
