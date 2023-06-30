@@ -70,34 +70,16 @@ public:
         return param.handle;
     }
 
-    // A simple template for easy reading of memory.
-    template <typename type>
-    type read_memory(void* read_address, SIZE_T size, HANDLE target_handle) {
-        type output_buffer = (type)malloc(size);
+    // A simple function to read memory using the driver.
+    BOOL read_memory_raw(void* address, void* buf, size_t len, HANDLE targetProcess) {
+        k_param_readmem req{};
+        req.fromAddress = (void*)address;
+        req.length = len;
+        req.targetProcess = targetProcess;
+        req.toAddress = (void*)buf;
 
-        k_param_readmem read_request{};
-        read_request.fromAddress = (void*)read_address; // Address to read in process
-        read_request.length = size; // size in bytes of what we want to read
-        read_request.targetProcess = target_handle; // Privileged handle we created through the driver previously.
-        read_request.toAddress = (void*)output_buffer; // Address of buffer to write data to.
-
-        if (!DeviceIoControl(
-                hDevice, // Driver handle
-                0x60a26124, // Read memory IOCTl
-                &read_request, // Our request
-                sizeof(k_param_readmem),
-                &read_request,
-                sizeof(k_param_readmem),
-                nullptr,
-                nullptr
-                )) {
-            std::cout << "DeviceIOControl 0x60a26124 failed!" << std::endl;
-            std::cout << "Error code: " << GetLastError() << std::endl;
-            return output_buffer;
-        }
-
-        // Return the data received by the driver.
-        return output_buffer;
+        BOOL success = DeviceIoControl(hDevice, 0x60a26124, &req, sizeof(k_param_readmem), &req, sizeof(k_param_readmem), NULL, NULL);
+        return success;
     }
 
     void Shutdown() {
