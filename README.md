@@ -1,4 +1,5 @@
-![image](https://github.com/kite03/echoac-poc/assets/67329371/d9648d93-545a-4f02-ab5e-0d27d0bd8851)
+
+![image-removebg-preview(1)](https://github.com/kite03/echoac-poc/assets/67329371/3c983267-feb2-4152-b06c-b7860a5c004b)
 
 
 # echoh-no
