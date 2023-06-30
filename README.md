@@ -19,7 +19,7 @@ We also disclosed this exploit to them in private before disclosing it publicly,
 To read our interactions with the staff team of this company, and to see the companys' response to us disclosing this exploit to them, visit https://github.com/kite03/echoac-poc/blob/main/Writeup.md. it's honestly quite damming.
 
 ## The Main Memory IOCTL Bug (CVE ID requested)
-### A simple working PoC can be found in the PoC folder.
+### A working privilege escalation PoC can be found in the PoC folder.
 
 `echo-free.exe` deploys a Kernel driver named `echo_driver.sys`, which it uses mainly to scan process memory to "check for cheats".
 
