@@ -1,4 +1,6 @@
-# A PoC and writeup on vulnerabilties discovered in echo.ac's driver.
+![image-removebg-preview(1)](https://github.com/kite03/echoac-poc/assets/67329371/61bde794-ea06-4f25-a827-e294d6a81742)
+
+## A PoC and writeup on vulnerabilties discovered in echo.ac's driver.
 
 ## Background
 echo.ac is a commercial "screensharing tool", marketed and developed mostly for the Minecraft PvP community, but also used by some other game communities, such as Rust.
