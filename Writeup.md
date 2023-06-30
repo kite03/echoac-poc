@@ -1,3 +1,6 @@
+### I would like to politely state that you should not go and harass any of these people. While they have gone too far in may aspects and have been very rude, harassment is never ok. We shouldn't stoop to their level.
+
+
 ## What does echo do with all this data?
 Echo.ac is pretty quiet about the data it collects and why. Their own ToS on their website or their own scanning app does **not** tell us what data is scanned and what exactly they will do with it.\
 As of writing, archived here: 
@@ -52,19 +55,31 @@ At the time of writing, this was their updated "What do we log?" FAQ: ![faq](htt
 Notice the now missing statement on process memory. Shocking.
 
 # Company Response
-- On the 29th of June, 2023 I (protocol) contacted the CEO of `Inspect Element Ltd.`(which own echo.ac) about disclosing my findings before going public, His response to me was personally - pretty appalling. Our conversation was as follows (Screenshots).
-- Part 1
-- ![One](https://cdn.gls.cx/a44490cf0eb17eb0)
-- Part 2
-- ![Two](https://cdn.gls.cx/18f75e7b3f40e0f8)
-- Part 3
-- ![Three](https://cdn.gls.cx/d837c73f27054b84)
-- Part 4
-- ![Four](https://cdn.gls.cx/e2b770497bc06754)
-- Finally, And a screenshot of his profile. 
-- ![Profile](https://cdn.gls.cx/e62aeb70bb05cf79)
-- After this conversation, I was then **banned from their discord server.** for the crime of...trying to help resolve a vulnerability? Wonderful.
-- ![Banned](https://cdn.gls.cx/376db515dc954124)
-- Overall I felt pretty brushed off by his response, which is disappointing, as I was trying to amicably help resolve this issue, even considering the past interactions echo.ac and his developers had with me (Documented later on).
+On the 29th of June, 2023 I (protocol) contacted the CEO of `Inspect Element Ltd.`(which own echo.ac) about disclosing my findings before going public, His response to me was personally - pretty appalling. Our conversation was as follows (Screenshots).
 
+Part 1
+![One](https://cdn.gls.cx/a44490cf0eb17eb0)
+
+
+Part 2
+![Two](https://cdn.gls.cx/18f75e7b3f40e0f8)
+
+
+Part 3
+![Three](https://cdn.gls.cx/d837c73f27054b84)
+
+
+Part 4
+![Four](https://cdn.gls.cx/e2b770497bc06754)
+
+
+Finally, And a screenshot of his profile. 
+![Profile](https://cdn.gls.cx/e62aeb70bb05cf79)
+
+
+After this conversation, I was then **banned from their discord server.** for the crime of...trying to help resolve a vulnerability? Wonderful.
+![Banned](https://cdn.gls.cx/376db515dc954124)
+
+
+Overall I felt pretty brushed off by his response, which is disappointing, as I was trying to amicably help resolve this issue, even considering the past interactions echo.ac and his developers had with me.
 Quite frankly, echo.ac as a whole is ran very unprofessionally - especially apparent when their own developers, community support, and CEO starts using insults against me as a defence. Lovely.
