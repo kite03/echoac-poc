@@ -2,11 +2,21 @@
 
 ## A PoC and writeup on vulnerabilties discovered in echo.ac's driver.
 
+## 💕 Credits
+
+- Whanos: https://github.com/Whanos/
+- Lemon
+- kite03: https://github.com/kite03/
+
 ## Background
 echo.ac is a commercial "screensharing tool", marketed and developed mostly for the Minecraft PvP community, but also used by some other game communities, such as Rust.
 A "screensharing tool" is a program developed to "assist" server admins in identifying if someone's using cheats or similar banned external tools ingame - As such, these programs execute numerous intrusive scans on users computer, while being very vague of what they data collect and why.
 
-We will go into more detail about the data scanned by echo.ac and what it's seemingly doing with the data later.
+When this point was brought up to them, they reacted aggressively and attacked us for criticising this practice. We think that it is unfair that users can be banned for not wanting to run this invasive software.
+
+We also disclosed this exploit to them in private before disclosing it publicly, but they brushed us off and told us that we didn't know what we were talking about. welp.
+
+To read our interactions with the staff team of this company, and to see the companys' response to us disclosing this exploit to them, visit https://github.com/kite03/echoac-poc/blob/main/Writeup.md. it's honestly quite damming.
 
 ## The Main Memory IOCTL Bug (CVE ID requested)
 ### A simple working PoC can be found in the PoC folder.
