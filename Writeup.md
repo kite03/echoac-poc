@@ -1,7 +1,7 @@
 ### I would like to politely state that you should not go and harass any of these people. While they have gone too far in may aspects and have been very rude, harassment is never ok. We shouldn't stoop to their level.
 
 
-## What does echo do with all this data?
+## Echo and data
 Echo.ac is pretty quiet about the data it collects and why. Their own ToS on their website or their own scanning app does **not** tell us what data is scanned and what exactly they will do with it.\
 As of writing, archived here: 
 - Website 1: https://cdn.gls.cx/41fb30ea18f9631b
