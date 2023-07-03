@@ -21,7 +21,7 @@ To read our frankly, unprofessional experiences with the staff team of this comp
 We **strongly** recommend reading the above document after you finish this one. Thanks.
 
 ## The Main Memory IOCTL Bug (CVE ID requested)
-### A working privilege escalation PoC can be found in the PoC folder!
+### A working **privilege escalation** PoC can be found in the PoC folder!
 
 `echo-free.exe` deploys a Kernel driver named `echo_driver.sys`, which it uses mainly to scan process memory to "check for cheats".
 
@@ -53,6 +53,8 @@ The IOCTL attack series is as followed:
     ```
   - The requested data will be located in the buffer indicated by `toAddress`.
 - Close the driver handle, and then use command `sc stop EchoDrv && sc delete EchoDrv` to stop and remove the driver from the Kernel.
+
+This allows you to read both user and kernel memory, allowing for attacks like the Privilege Escalatation we have demonstrated in our PoC.
 
 ## Extra Driver Info
 - The driver was built on June 18th 2021, so presumably all client program versions from that point onwards are vulnerable.
