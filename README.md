@@ -1,4 +1,4 @@
-![ok-removebg-preview](https://github.com/kite03/echoac-poc/assets/67329371/365b0d25-9643-4987-9e6d-ef062d105f35)
+![image-removebg-preview1](https://github.com/kite03/echoac-poc/assets/67329371/9c5c89ca-d0b4-443c-84a2-97f94fb85657)
 
 ## A PoC and writeup on vulnerabilties discovered in echo.ac's driver.
 
