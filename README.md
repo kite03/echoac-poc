@@ -16,7 +16,7 @@ When this point was brought up to them, they reacted aggressively and attacked u
 
 I (Whanos/protocol) also attempted to disclose this exploit to the CEO in private before disclosing it publicly, but they brushed me off and then banned me from their discord server.
 
-To read our frankly, unprofessional experiences with the staff team of this company, and to see the company's appalling response to us disclosing this exploit to them, read https://github.com/kite03/echoac-poc/blob/main/Writeup.md. it's honestly quite damning.
+To read our frankly, unprofessional experiences with the staff team of this company, and to see the company's appalling response to us disclosing this exploit to them, read ioctl.fail/echo-ac-writeup/. it's honestly quite damning.
 
 We **strongly** recommend reading the above document after you finish this one. Thanks.
 
