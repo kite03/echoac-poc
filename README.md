@@ -66,6 +66,6 @@ From reading the code, it's clear that the developers responsible have knowledge
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/portable/access-control
 - https://learn.microsoft.com/en-us/windows-hardware/drivers/driversecurity/windows-security-model
 
-Now, we implore you to read the second document pertaining to the interactions between echo.ac and us. https://github.com/kite03/echoac-poc/blob/main/Writeup.md. 
+Now, we implore you to read the second document pertaining to the interactions between echo.ac and us -> https://ioctl.fail/echo-ac-writeup/ <-
 
 Thanks for your time 💜.
