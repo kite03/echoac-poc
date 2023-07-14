@@ -20,7 +20,7 @@ To read our frankly, unprofessional experiences with the staff team of this comp
 
 We **strongly** recommend reading the above document after you finish this one. Thanks.
 
-## The Main Memory IOCTL Bug (CVE ID requested)
+## The Main Memory IOCTL Bug
 ### A working **privilege escalation** PoC can be found in the PoC folder!
 
 `echo-free.exe` deploys a Kernel driver named `echo_driver.sys`, which it uses mainly to scan process memory to "check for cheats".
