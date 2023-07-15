@@ -11,6 +11,8 @@ Driver SHA256 Hash: `ea3c5569405ed02ec24298534a983bcb5de113c18bc3fd01a4dd0b5839c
 ## PrivilegeEscalation/
 This PoC demonstrates a Privilege Escalation exploit, by stealing the Kernel's KPROCESS/EPROCESS block and writing it to a newly spawned shell to elevate its privileges to the highest possible - nt authority\system.
 
+### **Important Note: Please build in Release mode! It appears to not execute correctly if built in Debug mode!**
+
 It may be too technical for some to understand, but I have tried to comment it well.
 
 
