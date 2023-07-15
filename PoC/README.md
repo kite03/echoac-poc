@@ -1,7 +1,7 @@
 # Example PoCs
 
 # Download Driver
-I have removed the driver binary from this binary for security. 
+I have removed the driver binary from this repo for security. 
 
 You may download the driver binary from the official loldrivers.io page, as well as read extra information about the driver file itself:
 https://www.loldrivers.io/drivers/afb8bb46-1d13-407d-9866-1daa7c82ca63/
