@@ -12,7 +12,9 @@
 https://ioctl.fail/echo-ac-writeup/
 
 # Driver Download
-I have removed the binary from this repo. You may read info and download the driver binary from the official loldrivers.io page: https://www.loldrivers.io/drivers/afb8bb46-1d13-407d-9866-1daa7c82ca63/
+I have removed the binary from this repo for security.
+
+You may read extra info and download the driver binary from the official loldrivers.io page: https://www.loldrivers.io/drivers/afb8bb46-1d13-407d-9866-1daa7c82ca63/
 
 ## Background
 echo.ac is a commercial "screensharing tool", marketed and developed mostly for the Minecraft PvP community, but also used by some other game communities, such as Rust.
