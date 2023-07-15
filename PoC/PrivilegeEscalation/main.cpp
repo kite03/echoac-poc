@@ -1,6 +1,6 @@
 /*
- * I strongly recommend also reading the writeup for more info on the background of this company and exploit.
- * https://github.com/kite03/echoac-poc/blob/main/Writeup.md
+ * I strongly recommend also reading the associated writeup for more details about the exploit and company. Thanks!
+ * https://ioctl.fail/echo-ac-writeup/
  */
 
 #include "DriverInterface.h"
