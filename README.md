@@ -2,7 +2,7 @@
 
 ## A PoC and writeup on vulnerabilties discovered in echo.ac's driver.
 
-### Remember kids, priv escalation is NOT a real exploit!
+### Remember kids, privilege escalation is NOT a real exploit!
 
 ![image](https://github.com/kite03/echoac-poc/assets/67329371/73e90dd1-bcb8-4c9e-b9b8-cb8334ecb6a6)
 
