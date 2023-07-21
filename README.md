@@ -5,7 +5,9 @@
 ### Remember kids, privilege escalation is NOT a real exploit!
 
 ![image](https://github.com/kite03/echoac-poc/assets/67329371/73e90dd1-bcb8-4c9e-b9b8-cb8334ecb6a6)
+![image](https://github.com/kite03/echoac-poc/assets/67329371/1b8a76c7-3be6-40e6-a31c-afd4e1993047)
 
+I love lying on the internet!
 
 # 💕 Credits
 
