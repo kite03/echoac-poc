@@ -14,6 +14,7 @@
 ## CERTS REVOKED
 
 Microsoft has added the Echo Driver to the driver blocklist and the certificate has been revoked by the team at Echo (even after they insisted that the exploit wasn't real).
+
 If you still wish to use the exploit, you must enable test signing and disable the Microsoft Vulnurable Driver blocklist.
 
 # 💕 Credits
