@@ -11,11 +11,13 @@
 - Affected operating systems: 64Bit versions of Windows from; Windows 7 to Windows 11.
 - Mitigation: Do not use the software, and add driver signatures to blacklist.
 
-## CERTIFICATE REVOKED
+~~## CERTIFICATE REVOKED~~
 
-Microsoft has added the Echo Driver to the Vulnerable Driver Blocklist and the certificate has been revoked (even after the Echo team insisted that the exploit wasn't real).
+~~Microsoft has added the Echo Driver to the Vulnerable Driver Blocklist and the certificate has been revoked (even after the Echo team insisted that the exploit wasn't real).~~
 
-If you still wish to use the exploit, you must enable test signing and disable the Microsoft Vulnerable Driver blocklist.
+err, nevermind? seems to still work lol
+
+If you still wish to use the exploit, you must ~~enable test signing and~~ disable the Microsoft Vulnerable Driver blocklist.
 
 # 💕 Credits
 
